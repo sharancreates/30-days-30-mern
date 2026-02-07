@@ -27,9 +27,3 @@ Built with the **MERN** stack (MongoDB, Express, React, Node.js).
 - MongoDB & Mongoose (Database)
 - Dotenv (Environment Variables)
 - Cors (Cross-Origin Resource Sharing)
-
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/your-username/quote-generator.git](https://github.com/your-username/quote-generator.git)
-cd quote-generator
