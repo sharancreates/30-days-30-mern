@@ -39,18 +39,12 @@ function App() {
 		<div className="home">
       <h2>Todo List</h2>
       <div className="create_form">
-        <input 
-          type="text" 
-          placeholder="Enter Task" 
-          onChange={(e) => setTask(e.target.value)} 
-        />
+        <input type="text" placeholder="Enter Task" onChange={(e) => setTask(e.target.value)} />
         <button type="button" onClick={handleAdd}>Add</button>
       </div>
 
       {
-        todos.length === 0 
-        ? <div><h2>No Record</h2></div>
-        : todos.map(todo => (
+        todos.length === 0 ? <div><h2>No Record</h2></div> : todos.map(todo => (
           <div className="task" key={todo._id}>
             <div className="checkbox" onClick={() => handleEdit(todo._id)}>
               {todo.done ? "✅" : "⬜"} 
